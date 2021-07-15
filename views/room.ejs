@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      const ROOM_ID = "<%= roomId %>";
+    </script>
+    <script
+      defer
+      src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"
+    ></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>chatroom</title>
+    <style>
+      #video-grid {
+        display: grid;
+        border: 2px solid #0e168d;
+        border-radius: 4px;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 200px 200px;
+        grid-gap: 20px;
+        background-color: #832de6c4;
+      }
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="video-grid"></div>
+  </body>
+</html>
