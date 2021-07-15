@@ -1,3 +1,3 @@
 # monfer
 
-## A simple video conferencing web application with zero authentication
+## A really video conferencing web application with zero authentication
